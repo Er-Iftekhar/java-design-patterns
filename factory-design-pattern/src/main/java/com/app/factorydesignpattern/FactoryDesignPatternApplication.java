@@ -11,13 +11,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class FactoryDesignPatternApplication {
 
     public static void main(String[] args) {
-        MotorVehicleFactory motorcycleFactory = new MotorcycleFactory();
-        MotorVehicle vehicle = motorcycleFactory.create();
-        vehicle.build();
-        System.out.println("---------------------------------------------");
-        MotorVehicleFactory carFactory = new CarFactory();
-        vehicle = carFactory.create();
-        vehicle.build();
         SpringApplication.run(FactoryDesignPatternApplication.class, args);
     }
 
